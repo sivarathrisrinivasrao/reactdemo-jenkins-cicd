@@ -1,0 +1,15 @@
+services:
+  react-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: react-jenkins-ui
+
+    ports:
+      - "8090:90"
+
+    restart: unless-stopped
+
+  
+
